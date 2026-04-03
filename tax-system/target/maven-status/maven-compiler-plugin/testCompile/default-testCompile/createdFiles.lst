@@ -1,0 +1,10 @@
+com\example\taxsystem\grocery\tests\GroceryRepositoryTest.class
+com\example\taxsystem\converter\tests\ConverterEngineTest$SourceContainer.class
+com\example\taxsystem\stresstest\tests\HttpStressTestRunnerTest.class
+com\example\taxsystem\converter\tests\ConverterEngineTest$TargetContainer.class
+com\example\taxsystem\grocery\tests\GroceryServiceTest.class
+com\example\taxsystem\converter\tests\ConverterEngineTest$UpperCaseLabelConverter.class
+com\example\taxsystem\grocery\tests\GroceryControllerTest.class
+com\example\taxsystem\converter\tests\ConverterEngineTest.class
+com\example\taxsystem\grocery\tests\GroceryFlowIntegrationTest.class
+com\example\taxsystem\converter\tests\ConverterEngineTest$ConvertedLabel.class
