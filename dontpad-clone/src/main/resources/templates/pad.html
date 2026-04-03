@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DontPad Clone</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+        .header { margin-bottom: 16px; }
+        .slug { color: #666; font-size: 14px; }
+        textarea { width: 100%; min-height: 70vh; padding: 16px; font-size: 15px; line-height: 1.5; resize: vertical; box-sizing: border-box; }
+        .actions { margin-top: 12px; display: flex; gap: 12px; align-items: center; }
+        button { padding: 10px 16px; border: 0; background: #0a66c2; color: white; cursor: pointer; }
+        .status { color: #0a7a2f; font-size: 14px; }
+        .error { color: #b00020; font-size: 14px; }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>DontPad Clone</h1>
+    <div class="slug" th:text="${'Pad: ' + pad.slug}"></div>
+</div>
+
+<textarea id="content" th:text="${pad.content}"></textarea>
+
+<div class="actions">
+    <button id="saveButton" type="button">Save</button>
+    <span id="status" class="status"></span>
+</div>
+
+<script th:inline="javascript">
+    const slug = [[${pad.slug}]];
+    const contentEl = document.getElementById('content');
+    const statusEl = document.getElementById('status');
+    const saveButton = document.getElementById('saveButton');
+
+    async function savePad() {
+        statusEl.textContent = 'Saving...';
+        statusEl.className = 'status';
+
+        const response = await fetch('/api/pads/' + slug, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                content: contentEl.value
+            })
+        });
+
+        if (!response.ok) {
+            statusEl.textContent = 'Save failed';
+            statusEl.className = 'error';
+            return;
+        }
+
+        statusEl.textContent = 'Saved successfully';
+        statusEl.className = 'status';
+    }
+
+    saveButton.addEventListener('click', savePad);
+</script>
+</body>
+</html>
+
