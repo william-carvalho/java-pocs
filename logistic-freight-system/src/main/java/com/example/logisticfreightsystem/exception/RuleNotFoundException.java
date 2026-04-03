@@ -1,0 +1,8 @@
+package com.example.logisticfreightsystem.exception;
+
+public class RuleNotFoundException extends RuntimeException {
+
+    public RuleNotFoundException(String message) {
+        super(message);
+    }
+}
