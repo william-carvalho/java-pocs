@@ -1,0 +1,26 @@
+codegen:
+  basePackage: com.example.generated
+  outputDir: ./generated-src
+  classes:
+    - name: User
+      generateGettersSetters: true
+      generateNoArgsConstructor: true
+      generateAllArgsConstructor: true
+      fields:
+        - name: id
+          type: Long
+        - name: name
+          type: String
+        - name: email
+          type: String
+    - name: Address
+      generateGettersSetters: true
+      generateNoArgsConstructor: true
+      fields:
+        - name: street
+          type: String
+        - name: city
+          type: String
+        - name: zipCode
+          type: String
+
