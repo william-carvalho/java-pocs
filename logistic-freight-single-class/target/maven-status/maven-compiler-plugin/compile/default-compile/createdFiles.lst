@@ -1,0 +1,8 @@
+com\example\logisticfreight\LogisticFreight.class
+com\example\logisticfreight\LogisticFreight$1.class
+com\example\logisticfreight\LogisticFreight$SizeCategory.class
+com\example\logisticfreight\LogisticFreight$PriceTable$Builder.class
+com\example\logisticfreight\LogisticFreight$TransportationType.class
+com\example\logisticfreight\LogisticFreight$FreightRequest.class
+com\example\logisticfreight\LogisticFreight$FreightCalculator.class
+com\example\logisticfreight\LogisticFreight$PriceTable.class
