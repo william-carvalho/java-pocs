@@ -1,0 +1,11 @@
+com\example\guitarfactory\GuitarFactory$ComponentCategory.class
+com\example\guitarfactory\GuitarFactory$SelectedComponent.class
+com\example\guitarfactory\GuitarFactory$WorkOrderStatus.class
+com\example\guitarfactory\GuitarFactory$1.class
+com\example\guitarfactory\GuitarFactory.class
+com\example\guitarfactory\GuitarFactory$GuitarModel.class
+com\example\guitarfactory\GuitarFactory$CustomGuitarStatus.class
+com\example\guitarfactory\GuitarFactory$Component.class
+com\example\guitarfactory\GuitarFactory$CustomSpec.class
+com\example\guitarfactory\GuitarFactory$CustomGuitar.class
+com\example\guitarfactory\GuitarFactory$WorkOrder.class
