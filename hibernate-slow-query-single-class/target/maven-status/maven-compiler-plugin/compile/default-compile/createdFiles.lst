@@ -1,0 +1,9 @@
+com\example\slowquery\HibernateSlowQueryDetector$QueryExecutionException.class
+com\example\slowquery\HibernateSlowQueryDetector$SlowQueryRecord.class
+com\example\slowquery\HibernateSlowQueryDetector$QueryWork.class
+com\example\slowquery\HibernateSlowQueryDetector$SlowQueryStats.class
+com\example\slowquery\HibernateSlowQueryDetector$Clock.class
+com\example\slowquery\HibernateSlowQueryDetector.class
+com\example\slowquery\HibernateSlowQueryDetector$1.class
+com\example\slowquery\HibernateSlowQueryDetector$QueryContext.class
+com\example\slowquery\HibernateSlowQueryDetector$SystemClock.class
