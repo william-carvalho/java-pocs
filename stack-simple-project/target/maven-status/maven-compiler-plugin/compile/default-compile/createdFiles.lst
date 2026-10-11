@@ -1,0 +1,5 @@
+com\example\stack\Main.class
+com\example\stack\SimpleStack$1.class
+com\example\stack\SimpleStack$Node.class
+com\example\stack\SimpleStack.class
+com\example\stack\BracketValidator.class
