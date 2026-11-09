@@ -14,4 +14,25 @@ public class CheckPermutation {
       }
       return sort(value1).equals(sort(value2));
    }
+
+   public boolean permutation(String value1, String value2) {
+      if (value1.length() != value2.length()) {
+         return false;
+      }
+
+      int[] letters = new int[128]; // Assumption: ASCII
+      char[] value1Array = value1.toCharArray();
+      for (char c : value1Array) {
+         letters[c]++;
+      }
+
+      for (int i = 0; i < value2.length(); i++) {
+         int c = (int) value2.charAt(i);
+         letters[c]--;
+         if (letters[c] < 0) {
+            return false;
+         }
+      }
+      return true;
+   }
 }
