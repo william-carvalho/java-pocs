@@ -17,6 +17,7 @@ public class PalindromePermutation {
   return table;
  }
  
+ 
  public int getCharNumber(Character c) {
   int a = Character.getNumericValue('a');
   int z = Character.getNumericValue('z');
