@@ -18,6 +18,7 @@ public class PalindromePermutation {
  }
  
  
+ 
  public int getCharNumber(Character c) {
   int a = Character.getNumericValue('a');
   int z = Character.getNumericValue('z');
